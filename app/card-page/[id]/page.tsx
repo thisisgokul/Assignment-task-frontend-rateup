@@ -3,7 +3,7 @@ import CardView from "@/components/shared/CardView";
 
 export default async function CardPage({ params, searchParams }: {
   params:Promise<{id:string}>;
-  searchParams:Promise<{boardId:number | string | undefined }>
+  searchParams:Promise<{boardId: string | undefined }>
 }) {
   const {id} = await params
   const {boardId} = await searchParams
