@@ -1,8 +1,12 @@
 import CardView from "@/components/shared/CardView";
 
 interface CardPageProps {
-  params: { id: string }; 
-  searchParams: { boardId?: string };
+  params: {
+    id: string;
+  };
+  searchParams: {
+    boardId?: string;
+  };
 }
 
 export default function CardPage({ params, searchParams }: CardPageProps) {
