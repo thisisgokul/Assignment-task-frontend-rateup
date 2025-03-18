@@ -27,12 +27,8 @@ export type Cards = {
   };
 
   export type BoardPageProps = {
-    params: {
-      id: string;
-    };
-    searchParams: {
-      boardId: number;
-    };
+    params: { id: string };
+  searchParams: { boardId: string };
   };
   
 
