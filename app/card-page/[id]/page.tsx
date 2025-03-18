@@ -1,7 +1,7 @@
 import CardView from "@/components/shared/CardView";
 
-
-export default function CardPage({ params, searchParams }: any) {
+// @ts-ignore
+export default function CardPage({ params, searchParams }) {
   const boardId = Number(searchParams.boardId);
 
   return (
