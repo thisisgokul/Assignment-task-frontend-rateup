@@ -8,7 +8,7 @@ import useSWR from "swr";
 import { fetcher } from "@/lib/utils/fetcher";
 
 export default function CardView({ boardId, id }: CardIdProps) {
-  const { data: lists, isLoading } = useSWR<{ data: Lists[] }>(
+  const { data: lists } = useSWR<{ data: Lists[] }>(
     `/boards/${boardId}/lists`,
     fetcher
   );

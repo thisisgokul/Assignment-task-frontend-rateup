@@ -1,7 +1,7 @@
 "use client";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MoreVertical, Pencil, Trash2 } from "lucide-react";
+import {  Pencil } from "lucide-react";
 import { Cards, Lists } from "@/types";
 import useSWR from "swr";
 import { fetcher } from "@/lib/utils/fetcher";
