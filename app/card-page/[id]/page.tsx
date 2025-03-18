@@ -1,21 +1,17 @@
 import CardView from "@/components/shared/CardView";
 
-interface CardPageProps {
-  params: {
-    id: string;
-  };
-  searchParams: {
-    [key: string]: string | string[] | undefined;
-  };
-}
 
-export default function CardPage({ params, searchParams }: CardPageProps) {
-  const boardId = searchParams.boardId ? Number(searchParams.boardId) : undefined;
+export default async function CardPage({ params, searchParams }: {
+  params:Promise<{id:string}>;
+  searchParams:Promise<{boardId:number | string | undefined }>
+}) {
+  const {id} = await params
+  const {boardId} = await searchParams
 
   return (
     <main>
       <section>
-        <CardView id={params.id} boardId={boardId} />
+        <CardView id={id} boardId={boardId} />
       </section>
     </main>
   );
