@@ -5,7 +5,7 @@ interface CardPageProps {
     id: string;
   };
   searchParams: {
-    boardId?: string;
+    [key: string]: string | string[] | undefined;
   };
 }
 
