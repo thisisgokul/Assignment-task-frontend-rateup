@@ -1,4 +1,4 @@
-# Frontend - Kanban Board Application ## Live Demo
+# Frontend - Kanban Board Application
 [Live Application](https://assignment-task-frontend-rateup.vercel.app/)
 
 ## Installation & Setup
