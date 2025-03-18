@@ -1,8 +1,8 @@
 import CardView from "@/components/shared/CardView";
-import { BoardPageProps } from "@/types";
 
-export default function CardPage({ params, searchParams }: BoardPageProps) {
-  const boardId = Number(searchParams.boardId); // Ensure it's a number if required
+
+export default function CardPage({ params, searchParams }: any) {
+  const boardId = Number(searchParams.boardId);
 
   return (
     <main>
