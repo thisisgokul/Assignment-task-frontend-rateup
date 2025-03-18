@@ -1,8 +1,12 @@
 import CardView from "@/components/shared/CardView";
 
-// @ts-ignore
-export default function CardPage({ params, searchParams }) {
-  const boardId = Number(searchParams.boardId);
+interface CardPageProps {
+  params: { id: string };
+  searchParams: { boardId?: string }; // Make boardId optional
+}
+
+export default function CardPage({ params, searchParams }: CardPageProps) {
+  const boardId = searchParams.boardId ? Number(searchParams.boardId) : null;
 
   return (
     <main>
@@ -12,4 +16,3 @@ export default function CardPage({ params, searchParams }) {
     </main>
   );
 }
-

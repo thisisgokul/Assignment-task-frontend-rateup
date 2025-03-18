@@ -39,7 +39,7 @@ export type Cards = {
   };
 
   export type CardIdProps = {
-    boardId?: number; // Make it optional
+    boardId?: any; // Make it optional
     id?: string 
    
   };
