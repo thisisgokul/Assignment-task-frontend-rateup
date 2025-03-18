@@ -1,12 +1,15 @@
 import ListView from "@/components/shared/ListVIew";
-import { boardId } from "@/types";
 import React from "react";
 
-export default function ListPage({ params }: boardId) {
+export default async function ListPage({ params }: {
+  params:Promise<{id:string}>;
+ 
+}) {
+  const {id} = await params
   return (
     <main>
       <section>
-        <ListView boardId={params.id} />
+        <ListView boardId={id} />
       </section>
     </main>
   );
